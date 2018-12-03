@@ -1,4 +1,4 @@
-import math
+
 
 A=input("inserisci il numero ==")
 A=int(A)
