@@ -1,59 +1,29 @@
 import math
 
-cont=0
-cont=int(cont)
-print("inserire A --->")  
+print("inserire Ax2 --->")  
 A=input()
 A=int(A)
-print("inserire B --->")
+print("inserire Bx --->")
 B=input()
 B=int(B)
 print("inserire C --->")
 C=input()
 C=int(C)
 
-if A==0:
-   cont=cont+2
-if B==0:
-   cont=cont+4
-if C==0:
-   cont=cont+8
 
 
-if cont == 4:
-   X1 = (C*-1)/A
-   if X1 != 0:
-      X2=X1*-1
-      print("le soluzioni sono X=",X1," & X=",X2)
-
-if cont == 8:
-   X1=C
-   X2=(B*-1)/A
-   print("le soluzioni sono X=",X1," & X=",X2)
-
-if cont == 10:
-   X1 =0
-   print("la soluzione è X=",X1)
-
-if cont == 6:
+if A==0 and B==0 and C==0:
+         print("per ogni X")
+elif A==0 and B==0:
    print("Non esiste X")
-
-if cont == 12:
-   X1 =0
-   print("la soluzione è X=",X1)
-
-if cont == 14:
-   print("per ogni X")
-
-if cont == 2:
-   X1 = (C*-1)/B
-   print("la soluzione è X=",X1)
-
+elif A==0:
+    R=-C 
+    R=C/B
+    print(R)
 else:
    D1=(B**2)
    D2=4*(A*C)
    D=D1-D2
-   D=int(D)
 
    if D > 0:
       S=math.sqrt(D)
